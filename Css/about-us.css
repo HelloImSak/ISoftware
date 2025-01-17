@@ -110,8 +110,12 @@ main {
     padding-top: 96px;
 }
 
-.section-1 h2 {
+.section-1 p {
     font-family: "Roboto Mono", serif;
+}
+.section-2 h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .section-3 .p {
@@ -138,4 +142,9 @@ main {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     color: #ff5733;
+}
+
+.section-4 h3{
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 40px;
 }

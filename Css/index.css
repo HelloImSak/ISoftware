@@ -63,6 +63,10 @@ body {
 .button:hover {
     background: #5a5a80;
 }
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 30px;
+}
 
 section {
     margin-top: 70px;
@@ -144,11 +148,20 @@ main {
 }
 
 .section-1 h2 {
-    font-family: "Roboto Mono", serif;
+    font-family: "Courier New", Courier, monospace;
 }
 
 .section-2 {
     background-color: transparent;
+}
+
+@media (max-width: 1400px) {
+    .section-2 .truncate-text {
+        -webkit-line-clamp: 4;
+        line-clamp: 4;
+
+    }
+
 }
 
 .section-3 .card-con {
@@ -160,6 +173,10 @@ main {
     height: 80px;
     display: block;
     margin: 0 auto;
+}
+
+.section-3 {
+    text-align: center;
 }
 
 .card-body .card-title {
@@ -177,6 +194,14 @@ main {
 
 }
 
+@media (min-width: 1400px) {
+    .section-3 .truncate-text {
+        -webkit-line-clamp: 3;
+        line-clamp: 4;
+
+    }
+}
+
 /* section 4 */
 .section-3 .card {
     background-color: #b3bccc;
@@ -190,6 +215,14 @@ main {
 }
 
 @media (max-width: 1400px) {
+    .section-4 .truncate-text {
+        -webkit-line-clamp: 4;
+        line-clamp: 4;
+
+    }
+}
+
+@media (min-width: 1400px) {
     .section-4 .truncate-text {
         -webkit-line-clamp: 4;
         line-clamp: 4;
