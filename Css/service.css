@@ -103,22 +103,55 @@ body {
 
 main {
     padding-top: 96px;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
-.section-1 h2{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.section-1 h2 {
+    font-family: "Roboto Mono",
+        serif;
+    font-weight: bold;
 }
-.section-2 .card{
+
+.section-2 .card {
     background-color: transparent;
+    text-align: center;
 }
-.section-2 h3{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+.section-2 img {
+    width: 500px;
+    height: 190px;
 }
+
+.section-2 h3 {
+    font-family: "Roboto Mono",
+        serif;
+    font-weight: bold;
+}
+
 .section-3 h3 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Roboto Mono",
+        serif;
+    font-weight: bold;
 }
+
 .section-4 h3 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Roboto Mono",
+        serif;
+    font-weight: bold;
+}
+
+.truncate-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 1400px) {
+    .section-2 .truncate-text {
+        -webkit-line-clamp: 5;
+        line-clamp: 4;
+
+    }
 }
