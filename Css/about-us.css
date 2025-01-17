@@ -113,9 +113,16 @@ main {
 .section-1 p {
     font-family: "Roboto Mono", serif;
 }
-.section-2 h2{
+
+.section-2 h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
+}
+
+@media (max-width: 768px) {
+    .section-2 img {
+        width: 400px;
+    }
 }
 
 .section-3 .p {
@@ -144,7 +151,45 @@ main {
     color: #ff5733;
 }
 
-.section-4 h3{
+.section-4 h3 {
     font-family: 'Poppins', sans-serif;
     margin-bottom: 40px;
+}
+
+.section-4 .carousel-indicators button {
+    background-color: black;
+}
+
+.section-4 .carousel-indicators .active {
+    background-color: black;
+    /* Ensure the active indicator is also black */
+}
+
+.truncate-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+}
+
+@media (max-width: 1400px) {
+    .truncate-text {
+        -webkit-line-clamp: 4;
+        line-clamp: 2;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .truncate-text {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        min-height: 5em;
+        line-height: 1.5em;
+    }
 }

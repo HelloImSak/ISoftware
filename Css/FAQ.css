@@ -141,13 +141,22 @@ form.faq-contact-form .form-outline textarea {
     outline: none !important;
 }
 
-.section-1 h2{
+.section-1 h2 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .section-1 p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .img-fluid {
+        width: 400px;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
 footer {
     background: linear-gradient(to top, #c292b4, #a6c1ee);
 }
