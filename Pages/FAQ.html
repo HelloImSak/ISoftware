@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/FAQ.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://unpkg.com/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+
+    <!-- Google Fonts - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- LordIcon -->
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.1.0/mdb.min.css" rel="stylesheet" />
+    <!-- IonIcon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Typed.js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.1.0/mdb.min.css" rel="stylesheet" />
+    <!-- MDB -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.1.0/mdb.umd.min.js"></script>
+
+    <title>I-Software</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
+            <div class="container p-0">
+                <!-- Logo -->
+                <div class="d-flex align-items-center justify-between">
+                    <lord-icon src="../Logo/Logo.json" trigger="loop" stroke="bold" state="loop-roll"
+                        colors="primary:#242424,secondary:#c71f16" style="width:80px;height:96px">
+                    </lord-icon>
+                    <img src="../Imgs/Logo.png" alt="Logo Text" class="Logo-text">
+                </div>
+
+                <!-- Toggle Button -->
+                <div class="mobile-menu-icon">
+                    <ion-icon onclick="onToggleMenu(this)" name="menu"></ion-icon>
+                </div>
+
+                <!-- Menu List -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="/index.html">HOME</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="../Pages/service.html">SERVICE</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="../Pages/about-us.html">ABOUT US</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link active" href="#">FAQ</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                    </ul>
+
+                    <!-- Login Buttons -->
+                    <div class="d-flex gap-3">
+                        <a href="../Pages/login.html" class="btn btn-dark">Login</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="py-3 py-md-5">
+            <div class="container">
+                <div class="row gy-5 gy-lg-0 align-items-lg-center">
+                    <div class="col-12 col-lg-6">
+                        <img class="img-fluid rounded" loading="lazy" src="../Imgs/FAQ/Questions-bro.png"
+                            alt="How can we help you?">
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="row justify-content-xl-end">
+                            <div class="col-12 col-xl-11">
+                                <h2 class="h1 mb-3 text-black">How can we help you?</h2>
+                                <p class="lead fs-4 text-black mb-5">We hope you have found an answer to your
+                                    question. If
+                                    you need any help, please search your query on our Support Center or contact us via
+                                    email.
+                                </p>
+                                <div class="accordion accordion-flush" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                How Do I Change My Billing Information?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show"
+                                            aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p>To change your billing information, please follow these steps:</p>
+                                                <ul>
+                                                    <li>Go to our website and sign in to your account.</li>
+                                                    <li>Click on your profile picture in the top right corner of the
+                                                        page and
+                                                        select "Account Settings."</li>
+                                                    <li>Under the "Billing Information" section, click on "Edit."</li>
+                                                    <li>Make your changes and click on "Save."</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                How Does Payment System Work?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                A payment system is a way to transfer money from one person or
+                                                organization to
+                                                another. It is a complex process that involves many different parties,
+                                                including
+                                                banks, credit card companies, and merchants.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                                How Do I Cancel My Account?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p>To cancel your account, please follow these steps:</p>
+                                                <ul>
+                                                    <li>Go to our website and sign in to your account.</li>
+                                                    <li>Click on your profile picture in the top right corner of the
+                                                        page and
+                                                        select "Account Settings."</li>
+                                                    <li>Scroll to the bottom of the page and click on "Cancel Account."
+                                                    </li>
+                                                    <li>Enter your password and click on "Cancel Account."</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <p class="display-6">
+                Still have any questions? Contact us to get your answer!
+            </p>
+            <form action="" method="POST" class="faq-contact-form">
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                    <input type="email" id="form4Example2" class="form-control" name="email" required="">
+                    <label class="form-label" for="form4Example2">Email address</label>
+                </div>
+
+                <!-- Message input -->
+                <div class="form-outline mb-4">
+                    <textarea class="form-control" id="form4Example3" rows="4" name="message" required=""></textarea>
+                    <label class="form-label" for="form4Example3">Message</label>
+                </div>
+
+                <!-- Submit button -->
+                <input type="submit" class="btn btn-primary btn-block mb-4 faq-contact-form-submit" value="SEND">
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="bg-light">
+        <div class="container py-3">
+            <div class="row">
+                <!-- Company Info -->
+                <div class="col-md-3 mb-3">
+                    <h6 class="text-uppercase fw-bold mb-4">T-Sotfware</h6>
+                    <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit.</p>
+                </div>
+
+                <!-- Products -->
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase fw-bold mb-4">Projects</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Website</a></li>
+                        <li class="mb-2"><a href="#" class="text-dark text-decoration-none">System</a></li>
+                        <li class="mb-2"><a href="#" class="text-dark text-decoration-none">BrandFlow</a></li>
+                        <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Bootstrap Angular</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-md-4 mb-3">
+                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-home me-2"></i>Phnom Penh, PS 10012, Cambodia</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i>isoftware@gmail.com</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i>+855 23 555 555</li>
+                        <li class="mb-2"><i class="fas fa-print me-2"></i>+855 93 4777 03</li>
+                    </ul>
+                </div>
+
+                <!-- Social Links -->
+                <div class="col-md-3 mb-3">
+                    <h6 class="text-uppercase fw-bold mb-4">Follow Us</h6>
+                    <div class="d-flex flex-wrap gap-2 justify-content-center">
+                        <a href="#" class="btn btn-primary me-2" style="background-color: #3b5998;">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="btn btn-primary me-2" style="background-color: #55acee;">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="btn btn-primary me-2" style="background-color: #dd4b39;">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="btn btn-primary me-2" style="background-color: #ac2bac;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="btn btn-primary me-2" style="background-color: #0082ca;">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="btn btn-primary me-2" style="background-color: #333333;">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="text-center py-3 bg-dark text-white">
+            © 2025 Copyright:
+            <a href="https://mdbootstrap.com/" class="text-white text-decoration-none">I-Software.com.kh</a>
+        </div>
+    </footer>
+
+
+    <script>
+        function onToggleMenu(e) {
+            // Toggle the icon between menu and close
+            e.name = e.name === 'menu' ? 'close' : 'menu';
+
+            const navbarContent = document.getElementById('navbarContent');
+            navbarContent.classList.toggle('show');
+
+        }
+    </script>
+    <!-- AOS -->
+    <script>
+        AOS.init();
+    </script>
+    <!-- Typed.js -->
+
+
+</body>
+
+</html>

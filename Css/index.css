@@ -1,0 +1,202 @@
+.Logo-text {
+    width: 100px;
+    height: 50px;
+}
+
+footer img {
+    width: 100px;
+    height: 50px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to top, #c292b4, #a6c1ee);
+    min-height: 100vh;
+}
+
+.navbar {
+    background: linear-gradient(to top, #c292b4, #a6c1ee);
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.active {
+    background-color: #64748b;
+    color: white !important;
+    border-radius: 0.25rem;
+}
+
+.is-floating-animated {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.button {
+    font-size: 15px;
+    color: #fafafa;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 2px solid #fafafa;
+    background: #252525;
+    box-shadow: 3px 3px #fafafa;
+    cursor: pointer;
+}
+
+.button:active {
+    box-shadow: none;
+    transform: translate(2px, 2px);
+}
+
+.button:hover {
+    background: #5a5a80;
+}
+
+section {
+    margin-top: 70px;
+}
+
+.navbar {
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .mobile-menu-icon {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        position: relative;
+        z-index: 1000;
+        margin-right: 15px;
+    }
+
+    ion-icon[name="menu"],
+    ion-icon[name="close"] {
+        display: inline-block;
+        font-size: 2rem;
+        cursor: pointer;
+        color: #000;
+    }
+}
+
+.navbar-collapse {
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: linear-gradient(to top, #c292b4, #626f86);
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-out;
+        transform: scaleY(0);
+        transform-origin: top;
+        opacity: 0;
+    }
+
+    .navbar-collapse.show {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    .navbar-nav {
+        margin: 0 !important;
+    }
+
+    .d-flex.gap-3 {
+        margin-top: 1rem;
+        justify-content: center;
+    }
+}
+
+main {
+    padding-top: 96px;
+}
+
+/* section 1 */
+.section-1 #dis {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.section-1 p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.section-1 h2 {
+    font-family: "Roboto Mono", serif;
+}
+
+.section-2 {
+    background-color: transparent;
+}
+
+.section-3 .card-con {
+    margin: 0;
+}
+
+.section-3 .card-body img {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+}
+
+.card-body .card-title {
+    font-family: "Roboto Mono",
+        serif;
+    text-align: center;
+}
+
+@media (max-width: 1400px) {
+    .section-3 .truncate-text {
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+
+    }
+
+}
+
+/* section 4 */
+.section-3 .card {
+    background-color: #b3bccc;
+}
+
+.truncate-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 1400px) {
+    .section-4 .truncate-text {
+        -webkit-line-clamp: 4;
+        line-clamp: 4;
+
+    }
+}
+
+.section-4 .card {
+    background-color: transparent;
+}
